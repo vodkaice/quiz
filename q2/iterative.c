@@ -5,22 +5,16 @@
 #include <string.h>
 
 char smallest_character(char *input ,char c) {
-    char res;	
-    //printf("%c\n",*input++);
-    //printf("%c\n",*input);
-    int i=0;
     while(*input!='\0'){
 	if(*input < c){
 	    *input++;
 	}
 	else{
-	    res = *input;
 	    break;
 	}
-	//*input++;
     }
     
-    return res;
+    return *input;
 }
 int main()
 {
